@@ -1,11 +1,4 @@
-bad_words =['<Media omitted>']
 
-with open("oldchat.txt") as oldfile,open('chat.txt', 'w') as newfile:
-    for line in oldfile:
-        if not any(bad_word in line for bad_word in bad_words):
-            newfile.write(line)
-            
-            
             
 import plotly.express
 import re
